@@ -1,0 +1,28 @@
+.row {
+  @mixin clearfix;
+
+  &--gutters {
+    margin-right: -45px;
+  }
+
+  &--gutters > div {
+    padding-right: 45px;
+  }
+
+  @mixin atMedium {
+    &__md-6 {
+      width: 50%;
+      float: left;
+    }
+
+    /*## begin equal height rules */
+    .flexbox &--equal-height-at-medium {
+      display: flex;
+
+      & > div {
+        float: none;
+        display: flex;
+      }
+    }
+  }
+}
