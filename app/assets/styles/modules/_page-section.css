@@ -3,6 +3,12 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 
+  @mixin atMedium {
+    margin-top: 4.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   &--blue-bg {
     background-color: rgba($mainColor, 0.3);
 
@@ -11,18 +17,16 @@
     }
   }
 
-  @mixin atMedium {
-    margin-top: 4.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   &__text-content {
     margin: 0 auto;
     text-align: center;
 
     p {
       text-align: justify;
+    }
+
+    img {
+      border-radius: 7px;
     }
 
     @mixin atMedium {
