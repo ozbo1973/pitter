@@ -12,7 +12,7 @@
   }
 
   @mixin atMedium {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
