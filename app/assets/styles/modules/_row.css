@@ -5,8 +5,26 @@
     margin-right: -85px;
   }
 
+  &--gutters-smaller {
+    margin-right: -10px;
+  }
+
   &--gutters > div {
     padding-right: 85px;
+  }
+
+  &--gutters-smaller > div {
+    padding-right: 10px;
+  }
+
+  &__xs-4 {
+    width: 33.33%;
+    float: left;
+  }
+
+  &__xs-8 {
+    width: 66.66%;
+    float: left;
   }
 
   @mixin atMedium {

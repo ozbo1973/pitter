@@ -1,0 +1,28 @@
+.footer {
+  background-color: $mainColor;
+  border-top: 0.1rem solid darkBlue;
+  margin: 1rem auto 0 auto;
+
+  @mixin atMedium {
+    border-top: 0.3rem solid darkBlue;
+    margin: 2rem auto 0 auto;
+  }
+
+  &__text-content {
+    text-align: center;
+    padding: 0.4rem 0;
+
+    @mixin atMedium {
+      padding: 1rem 0;
+    }
+
+    span {
+      font-weight: 300;
+
+      @mixin atMedium {
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
