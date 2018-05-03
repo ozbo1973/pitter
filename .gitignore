@@ -11,7 +11,7 @@
 *.sass-cache
 
 temp/
-docs/
+design/
 node_modules/
 .tmp/
 package-versions
