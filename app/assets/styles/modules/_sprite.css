@@ -1,15 +1,27 @@
 /* Do not edit modules/_sprite directly, modify gulp/template/sprite/sprite.css  */
 
   .icon {
-    background-image: url('../../assets/img/sprites/sprite-7d753b9f.svg');
+    background-image: url('../../assets/img/sprites/sprite-fdbc07cc.svg');
   }
 
   .no-svg .icon {
-    background-image: url('../../assets/img/sprites/sprite-7d753b9f.png');
+    background-image: url('../../assets/img/sprites/sprite-fdbc07cc.png');
   }
 
   .icon--prp {
     width: 122.37px ;
     height: 160.67px ;
     background-position:0 0
+  }
+
+  .icon--prp-sm {
+    width: 70.28px ;
+    height: 92px ;
+    background-position:99.71479791395046% 0
+  }
+
+  .icon--prp-xs {
+    width: 32.34px ;
+    height: 42px ;
+    background-position:76.16706087389518% 77.3109243697479%
   }
