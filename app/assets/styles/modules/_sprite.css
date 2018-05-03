@@ -1,0 +1,15 @@
+/* Do not edit modules/_sprite directly, modify gulp/template/sprite/sprite.css  */
+
+  .icon {
+    background-image: url('../../assets/img/sprites/sprite-7d753b9f.svg');
+  }
+
+  .no-svg .icon {
+    background-image: url('../../assets/img/sprites/sprite-7d753b9f.png');
+  }
+
+  .icon--prp {
+    width: 122.37px ;
+    height: 160.67px ;
+    background-position:0 0
+  }
