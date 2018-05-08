@@ -15,14 +15,19 @@
     @mixin atMedium {
       padding: 1rem 0;
     }
+  }
 
-    span {
-      font-weight: 300;
+  &__icon {
+    display: inline-block;
+    margin: 0 auto;
+  }
 
-      @mixin atMedium {
-        font-weight: 700;
-        font-size: 1.2rem;
-      }
+  &__title {
+    font-weight: 300;
+
+    @mixin atMedium {
+      font-weight: 700;
+      font-size: 1.2rem;
     }
   }
 }

@@ -1,11 +1,17 @@
 /* Do not edit modules/_sprite directly, modify gulp/template/sprite/sprite.css  */
 
   .icon {
-    background-image: url('../../assets/img/sprites/sprite-fdbc07cc.svg');
+    background-image: url('/assets/img/sprites/sprite-bd463083.svg');
   }
 
   .no-svg .icon {
-    background-image: url('../../assets/img/sprites/sprite-fdbc07cc.png');
+    background-image: url('/assets/img/sprites/sprite-bd463083.png');
+  }
+
+  .icon--facebook {
+    width: 23.23px ;
+    height: 44.01px ;
+    background-position:72.07987276904046% 78.63919993161808%
   }
 
   .icon--prp {
@@ -23,5 +29,5 @@
   .icon--prp-xs {
     width: 32.34px ;
     height: 42px ;
-    background-position:76.16706087389518% 77.3109243697479%
+    background-position:90.6261670608739% 77.3109243697479%
   }

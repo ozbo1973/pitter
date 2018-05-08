@@ -47,7 +47,7 @@ gulp.task("createSprite", ["beginCleanup"], () => {
 
 gulp.task("createPngCopy", ["createSprite"], () => {
   return gulp
-    .src("./app/temp/sprite/css/**/*.svg")
+    .src("./app/temp/sprites/css/**/*.svg")
     .pipe(svg2png())
     .pipe(gulp.dest("./app/temp/sprites/css"));
 });
