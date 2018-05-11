@@ -4,7 +4,7 @@
   padding-right: 0.5rem;
 
   @mixin atMedium {
-    margin-top: 4.5rem;
+    padding-top: 11.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }

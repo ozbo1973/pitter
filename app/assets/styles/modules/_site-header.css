@@ -7,14 +7,19 @@
 
   @mixin atMedium {
     padding: 1.9rem;
+
+    &--scrolling-down {
+      background-color: $mainSubColor;
+      padding: 0.9rem;
+    }
   }
 
   &__logo {
     position: absolute;
     left: 0;
-    transform: translateX(0);
+    /* transform: translateX(0);
     transform-origin: 50% 0;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; */
     top: 0;
     padding: 0 2.5rem 1.5625rem 2.5rem;
   }
@@ -22,33 +27,39 @@
   &__icon {
     display: inline-block;
     margin: 0 auto;
-  }
 
-  &__icon--until-medium {
-    display: inline-block;
-
-    @mixin atMedium {
-      display: none;
-    }
-  }
-
-  &__icon--medium-to-large {
-    display: none;
-
-    @mixin atMedium {
+    &--until-medium {
       display: inline-block;
+
+      @mixin atMedium {
+        display: none;
+      }
     }
 
-    @mixin atLarge {
+    &--medium-to-large {
       display: none;
+
+      @mixin atMedium {
+        display: inline-block;
+      }
+
+      @mixin atLarge {
+        display: none;
+      }
     }
-  }
 
-  &__icon--larger {
-    display: none;
+    &--larger {
+      display: none;
 
-    @mixin atLarge {
-      display: inline-block;
+      @mixin atLarge {
+        display: inline-block;
+      }
+    }
+
+    &--scrolling-down {
+      margin-top: -2.8125rem;
+      margin-right: -3rem;
+      transform: scale(0.4);
     }
   }
 
@@ -72,11 +83,15 @@
 
   &__title {
     font-size: 1rem;
-    margin: 1.5rem 0 0 1rem;
+    margin: 1.9rem 0 0 1rem;
 
     @mixin atMedium {
       margin-bottom: 0;
       font-size: 2rem;
+    }
+
+    &--scrolling-down {
+      color: #fff;
     }
   }
 
@@ -84,9 +99,14 @@
     font-size: 0.7rem;
     margin-top: 0;
     text-align: right;
+    opacity: 1;
 
     @mixin atMedium {
       font-size: 1rem;
+
+      &--scrolling-down {
+        opacity: 0;
+      }
     }
   }
 }
