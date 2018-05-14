@@ -4,7 +4,15 @@
 
   &__img {
     display: block;
-    padding-top: 5.5rem;
+    padding-top: 40px;
+
+    @mixin atMedium {
+      padding-top: 60px;
+    }
+
+    @mixin atLarge {
+      padding-top: 83.2px;
+    }
   }
 
   &__text-content {

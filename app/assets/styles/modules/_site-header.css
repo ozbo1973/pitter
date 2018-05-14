@@ -6,11 +6,18 @@
   background-color: rgba($mainColor, 0.8);
 
   @mixin atMedium {
+    &--scrolling-down {
+      background-color: $mainSubColor;
+      padding: 0.5rem;
+    }
+  }
+
+  @mixin atLarge {
     padding: 1.9rem;
 
     &--scrolling-down {
       background-color: $mainSubColor;
-      padding: 0.9rem;
+      padding: 0.7rem;
     }
   }
 
@@ -57,9 +64,21 @@
     }
 
     &--scrolling-down {
-      margin-top: -2.8125rem;
-      margin-right: -3rem;
-      transform: scale(0.4);
+      margin-top: 0;
+      margin-right: 0;
+      transform: scale(1);
+
+      @mixin atMedium {
+        margin-top: -1.2rem;
+        margin-right: -0.5rem;
+        transform: scale(0.6);
+      }
+
+      @mixin atLarge {
+        margin-top: -2.8125rem;
+        margin-right: -3rem;
+        transform: scale(0.4);
+      }
     }
   }
 
@@ -87,11 +106,20 @@
 
     @mixin atMedium {
       margin-bottom: 0;
+      margin-top: 1.3rem;
+      font-size: 1rem;
+    }
+
+    @mixin atLarge {
+      margin-bottom: 0;
       font-size: 2rem;
     }
 
     &--scrolling-down {
-      color: #fff;
+      color: #000;
+      @mixin atMedium {
+        color: #fff;
+      }
     }
   }
 
@@ -107,6 +135,20 @@
       &--scrolling-down {
         opacity: 0;
       }
+    }
+  }
+
+  &__menu-content {
+    display: none;
+    font-size: 0.7rem;
+
+    @mixin atMedium {
+      display: block;
+    }
+
+    @mixin atLarge {
+      display: block;
+      font-size: 1rem;
     }
   }
 }
