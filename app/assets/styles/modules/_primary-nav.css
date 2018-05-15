@@ -1,6 +1,10 @@
 .primary-nav {
   display: none;
 
+  &--is-visible {
+    display: block;
+  }
+
   @mixin atMedium {
     display: block;
 
