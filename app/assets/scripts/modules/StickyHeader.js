@@ -61,7 +61,6 @@ class StickyHeader {
             const matchHeaderLink = currentPageSection.getAttribute(
               "data-match-link"
             );
-            console.log(matchHeaderLink);
             me.headerLinks.removeClass("is-current-link");
             $(matchHeaderLink).addClass("is-current-link");
           }

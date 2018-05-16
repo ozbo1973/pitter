@@ -3,6 +3,23 @@
 
   &--is-visible {
     display: block;
+
+    ul {
+      margin-top: 2rem;
+    }
+
+    li {
+      float: left;
+      list-style: none;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+
+    a {
+      color: $mainColor;
+      font-weight: 700;
+      text-decoration: none;
+    }
   }
 
   @mixin atMedium {
